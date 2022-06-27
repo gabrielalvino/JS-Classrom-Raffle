@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raffle</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <script>
+
+    function sortNumber(){
+      let people = 100
+      sort_number = Math.round(Math.random()*people);
+      document.getElementById("luck_number").innerHTML = sort_number;
+    }
+
+    function sortName(){
+      let people = ["Ana","Bia","Leo","Gabriel","Joe","Jonh","Alex"];
+      peopleLimited = people.length;
+      sort_name = Math.floor(Math.random()*peopleLimited);
+      document.getElementById("luck_name").innerHTML = people[sort_name];
+    }
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+
+
+  <div class="example-box">
+    <div class="background-shapes "></div>
+    <h1 id="luck_number">The lucky number is .....</h1>
+    <button type="button" class="btn btn-light" id="luck_number_button" onclick="sortNumber()">test your luck</button>
+
+    <h1 id="luck_name">The lucky name is .....</h1>
+    <button type="button" class="btn btn-light" id="luck_name_button"onclick="sortName()">test your luck</button>
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>
